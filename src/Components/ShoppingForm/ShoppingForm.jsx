@@ -31,7 +31,7 @@ export default function ShoppingForm( {
         <Form>
     <FormGroup floating  className="item-row col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
       <Input
-        id="item"
+        id="Item"
         name="item"
         placeholder="item"
         type="text"
@@ -45,7 +45,7 @@ export default function ShoppingForm( {
     {' '}
     <FormGroup floating className="item-row col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
       <Input
-        id="quantity"
+        id="Quantity"
         name="quantity"
         placeholder="quantity"
         type="number"
@@ -57,8 +57,8 @@ export default function ShoppingForm( {
       </Label>
     </FormGroup>
     {' '}
-    <Button>
-      Add
+    <Button type="submit" className="add">
+        {submitButtonText}
     </Button>
   </Form>
     ); 
