@@ -28,12 +28,12 @@ export default function ShoppingForm( {
  
  
     return ( 
-        <Form>
+        <Form action="#" method="POST" onSubmit={handleSubmit} className="form"> 
     <FormGroup floating  className="item-row col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
       <Input
         id="Item"
-        name="item"
-        placeholder="item"
+        name="Item"
+        placeholder="Item"
         type="text"
         value={item}
         onChange={handleItemChange}
@@ -46,8 +46,8 @@ export default function ShoppingForm( {
     <FormGroup floating className="item-row col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
       <Input
         id="Quantity"
-        name="quantity"
-        placeholder="quantity"
+        name="Quantity"
+        placeholder="Quantity"
         type="number"
         value={num}
         onChange={handleQuantityChange}

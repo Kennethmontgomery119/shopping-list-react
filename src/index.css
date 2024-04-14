@@ -1,5 +1,5 @@
 body {
-  background-image: url(./images/fridge2.png);
+  background-image: url(./images/Whiteboardbackground.png);
   background-size: cover;
   background-attachment: local ;
   color: rgb(38, 0, 255);
@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
+  padding-top: 95px;
 }
 
 code {

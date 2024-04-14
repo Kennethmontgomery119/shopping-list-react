@@ -12,7 +12,7 @@ function App() {
 
  
   const loadData = () => { 
-    fetch('https://rysgws-8080.csb.app/api/list') 
+    fetch('https://rysgws-8080.csb.app/api/list/') 
       .then(x => x.json()) 
       .then(response => { 
         setShoppingList(response); 
@@ -24,7 +24,7 @@ function App() {
 
  
   const submitItem = (item, quantity) => { 
-    fetch('https://gh49gp-8080.csb.app/api/list/new', { 
+    fetch('https://gh49gp-8080.csb.app/api/list/new/', { 
       method: "POST", 
       body: JSON.stringify({ 
         item, 
