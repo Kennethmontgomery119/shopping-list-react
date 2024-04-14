@@ -12,7 +12,7 @@ function App() {
 
  
   const loadData = () => { 
-    fetch('https://rysgws-8080.csb.app/api/list/') 
+    fetch('https://lljssk-8080.csb.app/api/list') 
       .then(x => x.json()) 
       .then(response => { 
         setShoppingList(response); 
@@ -24,7 +24,7 @@ function App() {
 
  
   const submitItem = (item, quantity) => { 
-    fetch('https://gh49gp-8080.csb.app/api/list/new/', { 
+    fetch('https://lljssk-8080.csb.app/api/list/new', { 
       method: "POST", 
       body: JSON.stringify({ 
         item, 
@@ -40,7 +40,7 @@ function App() {
   } 
  
   const deleteItem = (id) => { 
-    fetch("https://gh49gp-8080.csb.app/api/list/" + id, { 
+    fetch("https://lljssk-8080.csb.app/api/list" + id, { 
         method: "DELETE", 
         headers: { 
             "Content-type": "application/json; charset=UTF-8", 
@@ -52,7 +52,7 @@ function App() {
 }; 
 
 function updateItem(id, item, quantity) {
-  fetch(`https://gh49gp-8080.csb.app/api/list/${id}`, {
+  fetch(`https://lljssk-8080.csb.app/api/list/${id}`, {
     method: "PUT",
     body: JSON.stringify({
       item: item,
