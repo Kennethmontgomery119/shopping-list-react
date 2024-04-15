@@ -40,7 +40,7 @@ function App() {
   } 
  
   const deleteItem = (id) => { 
-    fetch("https://lljssk-8080.csb.app/api/list" + id, { 
+    fetch("https://lljssk-8080.csb.app/api/list/" + id, { 
         method: "DELETE", 
         headers: { 
             "Content-type": "application/json; charset=UTF-8", 
