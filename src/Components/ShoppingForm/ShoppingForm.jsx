@@ -1,6 +1,4 @@
 import React, {useState} from 'react'; 
-import { Form, Button, FormGroup, Label, Input } from 'reactstrap';
-
  
 export default function ShoppingForm( {
     submitItem,
@@ -28,38 +26,24 @@ export default function ShoppingForm( {
  
  
     return ( 
-        <Form action="#" method="POST" onSubmit={handleSubmit} className="form"> 
-    <FormGroup floating  className="item-row col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
-      <Input
-        id="item"
-        name="item"
-        placeholder="item"
-        type="text"
-        value={item}
-        onChange={handleItemChange}
-        required/>
-      <Label for="item">
-        Item
-      </Label>
-    </FormGroup>
-    {' '}
-    <FormGroup floating className="item-row col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
-      <Input
-        id="quantity"
-        name="quantity"
-        placeholder="quantity"
-        type="number"
-        value={num}
-        onChange={handleQuantityChange}
-        required />
-      <Label for="quantity">
-        Quantity
-      </Label>
-    </FormGroup>
-    {' '}
-    <Button type="submit" className="add">
-        {submitButtonText}
-    </Button>
-  </Form>
+        <form action="#" method="POST" onSubmit={handleSubmit} className="form"> 
+            <label htmlFor="item">Item:</label> 
+            <input  
+                type="text"  
+                id="item"  
+                name="item"  
+                value={item}  
+                onChange={handleItemChange}  
+                required /> 
+            <label htmlFor="quantity">Quantity:</label> 
+            <input  
+                type="number"  
+                id="quantity"  
+                name="quantity"  
+                value={num}  
+                onChange={handleQuantityChange}  
+                required /> 
+            <button type="submit" className="add">{submitButtonText}</button> 
+        </form> 
     ); 
 } 
