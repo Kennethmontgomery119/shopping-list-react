@@ -32,6 +32,7 @@ function App() {
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
+        "Accept":"application/json"
       },
       mode: "cors"
     })
