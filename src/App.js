@@ -9,8 +9,7 @@ import './App.css';
 
 function App() {
   const [shoppingList, setShoppingList] = useState([]);
-
-
+  
   const loadData = () => {
     fetch('https://lljssk-8080.csb.app/api/list')
       .then(x => x.json())
@@ -21,7 +20,7 @@ function App() {
 
 
   useEffect(loadData, []);
-
+ 
 
   const submitItem = (item, quantity) => {
     fetch('https://lljssk-8080.csb.app/api/list/new', {
@@ -53,7 +52,7 @@ function App() {
   };
 
   function updateItem(id, item, quantity) {
-    fetch(`https://lljssk-8080.cs.app/api/list/${id}`, {
+    fetch(`https://lljssk-8080.csb.app/api/list/${id}`, {
       method: "PUT",
       body: JSON.stringify({
         item: item,
@@ -67,6 +66,8 @@ function App() {
       .then((x)=> x.json())
       .then(loadData);
   }
+
+  
 
   return(
     <div className="App">
