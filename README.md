@@ -1,6 +1,6 @@
-Hosting Link:
+Hosting Link: https://kennethmontgomery119.github.io/shopping-list-react/ 
 
-CodeSandbox:
+CodeSandbox: https://codesandbox.io/p/devbox/shopping-list-lljssk?file=%2Findex.js
 
 # Shopping List App
 
