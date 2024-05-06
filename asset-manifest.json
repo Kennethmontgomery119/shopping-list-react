@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/shopping-list-react/static/css/main.c2ce051e.css",
-    "main.js": "/shopping-list-react/static/js/main.1d6d93e2.js",
+    "main.js": "/shopping-list-react/static/js/main.f144c530.js",
     "static/media/tidydesk.png": "/shopping-list-react/static/media/tidydesk.20b42002601e6bcac6d0.png",
     "index.html": "/shopping-list-react/index.html",
     "main.c2ce051e.css.map": "/shopping-list-react/static/css/main.c2ce051e.css.map",
-    "main.1d6d93e2.js.map": "/shopping-list-react/static/js/main.1d6d93e2.js.map"
+    "main.f144c530.js.map": "/shopping-list-react/static/js/main.f144c530.js.map"
   },
   "entrypoints": [
     "static/css/main.c2ce051e.css",
-    "static/js/main.1d6d93e2.js"
+    "static/js/main.f144c530.js"
   ]
 }
