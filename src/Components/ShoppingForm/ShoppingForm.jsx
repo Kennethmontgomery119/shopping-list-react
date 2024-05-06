@@ -29,6 +29,9 @@ export default function ShoppingForm( {
     return ( 
         <Form action="#" method="POST" onSubmit={handleSubmit} className="form">
         <FormGroup  className="item col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4">
+        <Label for="item">
+            Item
+          </Label>
           <Input
             id="item"
             name="item"
@@ -37,12 +40,12 @@ export default function ShoppingForm( {
             value={item}
             onChange={handleItemChange}
             required />
-          <Label for="item">
-            Item
-          </Label>
         </FormGroup>
         {' '}
         <FormGroup  className="item col-12 col-md-8 col-xl-6 col-xxl-4 offset-md-2 offset-xl-3 offset-xxl-4" >
+        <Label for="quantity">
+            Quantity
+          </Label>
           <Input
             id="quantity"
             name="quantity"
@@ -51,9 +54,6 @@ export default function ShoppingForm( {
             value={num}
             onChange={handleQuantityChange}
             required />
-          <Label for="quantity">
-            Quantity
-          </Label>
         </FormGroup>
         {' '}
         <Button type="submit" className="add">
